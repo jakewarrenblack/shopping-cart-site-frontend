@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/flickity.css" media="screen">
+  <link rel="stylesheet" href="css/scale.css">
+  <script src="https://kit.fontawesome.com/fca6ae4c3f.js" crossorigin="anonymous"></script>
+  <title>Irish Timber Company</title>
+</head>
+<body class="body shop__body">
+
+  <nav id="nav" class="nav">
+    <div class="logo__burger__contain">
+      <i id="logo" class="logo"><img src="img/itc-logo-white.png"></i>
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+    </div>
+      <ul class="nav__links" id="js-menu">
+        <a id="nav__link" class="nav__link" href="index.html">Home</a>
+        <a id="nav__link" class="nav__link" href="#">About</a>
+        <a id="nav__link" class="nav__link" href="#">Contact</a>
+        <a id="nav__link" class="nav__link" href="shop.html">Shop</a>
+        <a id="nav__link" class="nav__link" href="#">Sustainability</a>
+        <a class="register" href="login_register.html">Login/Register</a>
+      </ul>
+  </nav>
+
+    <div class="form__contain">
+        <div class="btn__contain">
+          <div id="sign_in" class="btn btn form_btn form_btn_active">Sign In</div>
+          <div id="register" class="btn btn form_btn">Register</div>
+        </div>
+        <div class="container">
+          <form id="signin_register_form" name="register" action="#" method="post" enctype="multipart/form-data" class="form">
+    
+            <div class="form-group">
+              <label class="main__label" for="email">Email:</label>
+              <input placeholder="Email" class="form__input" type="text" name="email" id="email" value="" />
+            </div>
+    
+            <div class="form-group">
+              <label class="main__label" for="password">Password:</label>
+              <input placeholder="Password" class="form__input" type="password" name="password" id="password" />
+            </div>
+    
+            <div class="form-group register__element">
+              <label class="main__label" for="name">Name:</label>
+              <input placeholder="Name" class="form__input" type="text" name="name" id="name" value="" />
+            </div>
+            <div class="form-group register__element">
+              <label class="main__label" for="address">Address:</label>
+              <textarea placeholder="Address" class="form__input" type="text" name="address" id="address" value=""></textarea>
+            </div>
+            <div class="form-group register__element">
+              <label class="main__label" for="phone">Phone:</label>
+              <input placeholder="Phone" class="form__input" type="text" name="phone" id="phone" value="" />
+            </div>
+            <div class="form-group register__element">
+              <!--An uploaded file is moved into a temporary directory-->
+              <label for="profile">Profile image:</label>
+              <input type="file" name="profile" id="profile">
+            </div>
+            <button type="submit" class="btn form__btn myBtn btn-primary" name="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <section class="footer-top">
+            <div class="footer-links">
+                <ul class="navigation-list">
+                    <li class="navigation-list-item">work with us</li>
+                    <li class="navigation-list-item">find us</li>
+                    <li class="navigation-list-item">sign up for email</li>
+                    <li class="navigation-list-item">become a member</li>
+                    <li class="navigation-list-item">trade discount</li>
+                    <li class="navigation-list-item">provide feedback</li>
+                </ul>
+            </div>
+            <div class="help-links">
+                <ul class="help-links-list">
+                    <span class="list-title">GET HELP</span>
+                    <li class="help-links-list-item">order status</li>
+                    <li class="help-links-list-item">shipping and delivery</li>
+                    <li class="help-links-list-item">returns</li>
+                    <li class="help-links-list-item">payment options</li>
+                    <li class="help-links-list-item">contact us</li>
+                </ul>
+            </div>
+            <div class="about-links">
+                <ul class="about-links-list">
+                    <span class="list-title">ABOUT ITC</span>
+                    <li class="about-links-list-item">news</li>
+                    <li class="about-links-list-item">careers</li>
+                    <li class="about-links-list-item">investors</li>
+                    <li class="about-links-list-item">sustainability</li>
+                    <li class="about-links-list-item">national forestry council</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="footer-bottom">
+        <div class="base-row-left">
+            <small>&copy; 2021 ITC, Ltd. All Rights Reserved</small>
+        </div>
+        <div class="base-row-right-cont">
+            <ul class="base-row-right-list">
+                <li class="base-row-right-items">Guides</li>
+                <li class="base-row-right-items">Terms of use</li>
+                <li class="base-row-right-items">Terms of Sale</li>
+                <li class="base-row-right-items">Company details</li>
+                <li class="base-row-right-items">Privacy policy</li>
+                <li class="base-row-right-items">Cookie settings</li>
+            </ul>
+        </div>
+      </section>
+      </footer> 
+
+
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script>
+        var flkty = new Flickity( '.carousel', {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        cellSelector: '.carousel-cell',
+        wrapAround:true,
+        pageDots:false,
+        groupCells:true
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
